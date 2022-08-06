@@ -2,6 +2,13 @@
     git clone https://github.com/elias-gill-UNA/grupoLP3
     
 ### Cambiar rama
+    git checkout <rama>
+
+### Crear rama 
+    git branch <rama>
+
+### Commit
+    git commit -m "<un mensaje>"
 
 ### Push
 * Primera vez
