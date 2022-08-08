@@ -53,7 +53,11 @@ public class Factura {
     }
 
     public void setCant_articulos(int cant_articulos) {
-        this.cant_articulos = cant_articulos;
+        if ( cant_articulos < 0){
+            this.cant_articulos = 0;
+        } else {
+            this.cant_articulos = cant_articulos;
+        }
     }
 
     public double getPrecio() {
@@ -61,7 +65,11 @@ public class Factura {
     }
 
     public void setPrecio(double precio) {
-        this.precio = precio;
+        if ( precio < 0){
+            this.precio = 0.0;
+        } else {
+            this.precio = precio;
+        }
     }
 
     public void imprimir(){
