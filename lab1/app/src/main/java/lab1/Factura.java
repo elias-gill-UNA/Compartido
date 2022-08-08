@@ -63,4 +63,11 @@ public class Factura {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    public void imprimir(){
+        System.out.println("Articulo: " + this.descripcion_pieza);
+        System.out.println("Codigo: " + this.numero_pieza);
+        System.out.println("Precio: " + this.precio);
+        System.out.println("Cantidad: " + this.cant_articulos);
+    }
 }

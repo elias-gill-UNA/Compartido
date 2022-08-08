@@ -26,5 +26,5 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClass = 'lab1.App'
+    mainClass = 'lab1.PruebaFactura'
 }
