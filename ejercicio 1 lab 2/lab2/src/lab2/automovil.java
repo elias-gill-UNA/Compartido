@@ -9,7 +9,7 @@ package lab2;
  *
  * @author Andres Moises
  */
-public class automovil extends vehiculo implements accionesAuto{
+public class automovil extends vehiculo{//clase automovil que hereda de la clase vehiculo
     private int ruedas=4;
     
     public void cantidadRuedas(){
@@ -30,5 +30,9 @@ public class automovil extends vehiculo implements accionesAuto{
     
     public void parar(){
         System.out.println("has parado el auto");
+    }
+    
+    public void acelerar(){
+        System.out.println("has acelerado el auto");
     }
 }

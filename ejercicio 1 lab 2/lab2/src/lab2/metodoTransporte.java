@@ -9,6 +9,6 @@ package lab2;
  *
  * @author Andres Moises
  */
-public class metodoTransporte extends comodidad{
+public class metodoTransporte extends comodidad{//clase que hereda de la clase "comodidad"
     
 }
