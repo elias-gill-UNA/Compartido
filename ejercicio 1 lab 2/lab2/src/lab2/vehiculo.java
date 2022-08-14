@@ -9,7 +9,7 @@ package lab2;
  *
  * @author Andres Moises
  */
-public class vehiculo extends maquina implements accionesAuto{
+public class vehiculo extends motorizado implements accionesAuto{//clase vehiculo que hereda de la clase maquina
     private int ruedas;
     public void arrancar(){
         System.out.println("Has arrancado el vehiculo");

@@ -15,11 +15,18 @@ public class AppAuto {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        //objetos distintos pero con comportamientos similares(metodos similares)
         automovil auto = new automovil();
         vehiculo movil = new vehiculo();
         
-        usarInterfaz prueba = new usarInterfaz(auto);
-        prueba.parar();
+        usarInterfaz prueba = new usarInterfaz(movil);//si le pasas el objeto movil, sus metodos van a ser distintos
+        //comportamientos comunes de los autos
+        prueba.arrancar();
+        prueba.acelerar();
+        prueba.frenar();
+        prueba.sonarVocina();
+        prueba.frenar();
+        prueba.cantidadRuedas();
     }
     
 }
