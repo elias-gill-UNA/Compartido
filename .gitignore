@@ -6,3 +6,5 @@
 /lab2/ejercicio2.2/build/
 */bin/
 *.class
+/lab2/Ejercicio3/build/
+/lab2/Ejercicio3/nbproject/private/
