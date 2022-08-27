@@ -1,10 +1,11 @@
-package lab3ejercicio1;
+package lab3_ejercicio1;
 
-// @author Abeld
-
+// @author EliasGill
 public class Programador extends Informatico {
-    boolean onCall; // si esta de guardia o no
-    String nivel; // junior o senior
+
+    private boolean onCall; // si esta de guardia o no
+    private String nivel; // junior o senior
+    private String titulo = "Programador";
 
     public Programador(String primerNombre, String apellidoPaterno, int numeroCedula, String seccion,
             String especialidad, String nivel, boolean onCall, double salario) {
@@ -28,5 +29,13 @@ public class Programador extends Informatico {
 
     public void setNivel(String nivel) {
         this.nivel = nivel;
+    }
+
+    @Override
+    public String toString() {
+        return "Nombre: " + super.getPrimerNombre() + "\nApellido: " + super.getApellidoPaterno()
+                + "\nNumero de cedula: " + super.getNumeroCedula() + "\nTitulo: " + titulo + "\nArea de trabajo: "
+                + super.getSeccion() + "\nEspecialidad: " + super.getEspecialidad() + "\nEn guardia: " + isOnCall()
+                + "\nNivel: " + getNivel() + "\nSalario: " + super.getSalario();
     }
 }

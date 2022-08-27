@@ -1,4 +1,4 @@
-package lab3ejercicio1;
+package lab3_ejercicio1;
 
 // @author Abeld
 public abstract class Empleado {
@@ -15,21 +15,25 @@ public abstract class Empleado {
         this.salario = salario;
     }
 
-    public String obtenerPrimerNombre() {
+    public String getPrimerNombre() {
         return primerNombre;
     }
 
-    public String obtenerApellidoPaterno() {
+    public String getApellidoPaterno() {
         return apellidoPaterno;
     }
 
-    public int obtenerNumeroCedula() {
+    public int getNumeroCedula() {
         return numeroCedula;
+    }
+
+    public double getSalario() {
+        return salario;
     }
 
     @Override
     public String toString() {
-        return "Nombre: " + obtenerPrimerNombre() + "\nApellido: " + obtenerApellidoPaterno()
-                + "\nNumero de cedula: " + obtenerNumeroCedula();
+        return "Nombre: " + getPrimerNombre() + "\nApellido: " + getApellidoPaterno()
+                + "\nNumero de cedula: " + getNumeroCedula() + "\nSalario: " + getSalario();
     }
 }

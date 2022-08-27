@@ -1,4 +1,4 @@
-package lab3ejercicio1;
+package lab3_ejercicio1;
 
 // @author Abeld
 public class Gerente extends Empleado {
@@ -8,7 +8,9 @@ public class Gerente extends Empleado {
     // Gerente funcional o gerente general
     private String tipoGerente;
 
-    Gerente(String primerNombre, String apellidoPaterno, int numeroCedula, double salario, String departamento, String tipoGerente) {
+    private String titulo = "Gerente";
+
+    Gerente(String primerNombre, String apellidoPaterno, int numeroCedula, String departamento, String tipoGerente, double salario) {
         super(primerNombre, apellidoPaterno, numeroCedula, salario);
         this.departamento = departamento;
         this.tipoGerente = tipoGerente;
@@ -32,9 +34,9 @@ public class Gerente extends Empleado {
 
     @Override
     public String toString() {
-        return "Nombre: " + obtenerPrimerNombre() + "\nApellido: " + obtenerApellidoPaterno()
-                + "\nNumero de cedula: " + obtenerNumeroCedula() + "\nDepartamento:" + getDepartamento()
-                + "\nTipo de Gerente: " + getTipoGerente();
+        return "Nombre: " + super.getPrimerNombre() + "\nApellido: " + super.getApellidoPaterno()
+                + "\nNumero de cedula: " + super.getNumeroCedula() + "\nTitulo: " + titulo + "\nDepartamento: " + getDepartamento()
+                + "\nTipo de Gerente: " + getTipoGerente() + "\nSalario: " + super.getSalario();
     }
 
 }
