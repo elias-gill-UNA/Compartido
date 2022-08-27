@@ -8,10 +8,10 @@ public class Operador extends Informatico {
     String turno;
 
     public Operador(String primerNombre, String apellidoPaterno, int numeroCedula, String seccion,
-            String especialidad, String turno) {
+            String especialidad, String turno, double salario) {
 
         super(primerNombre, apellidoPaterno, numeroCedula, seccion,
-                especialidad);
+                especialidad, salario);
 
         this.turno = turno;
     }

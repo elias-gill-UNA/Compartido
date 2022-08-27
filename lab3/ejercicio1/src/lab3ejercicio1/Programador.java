@@ -7,8 +7,8 @@ public class Programador extends Informatico {
     String nivel; // junior o senior
 
     public Programador(String primerNombre, String apellidoPaterno, int numeroCedula, String seccion,
-            String especialidad, String nivel, boolean onCall) {
-        super(primerNombre, apellidoPaterno, numeroCedula, seccion, especialidad);
+            String especialidad, String nivel, boolean onCall, double salario) {
+        super(primerNombre, apellidoPaterno, numeroCedula, seccion, especialidad, salario);
         // los programadores pueden estar "de guardia" tambien llamado onCall
         this.onCall = onCall;
         this.nivel = nivel; // junior o senior

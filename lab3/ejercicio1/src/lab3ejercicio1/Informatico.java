@@ -7,8 +7,8 @@ public abstract class Informatico extends Empleado {
     private String seccion; // frontend, backend, testing
 
     public Informatico(String primerNombre, String apellidoPaterno, int numeroCedula, String seccion,
-            String especialidad) {
-        super(primerNombre, apellidoPaterno, numeroCedula);
+            String especialidad, double salario) {
+        super(primerNombre, apellidoPaterno, numeroCedula, salario);
         this.seccion = seccion;
         this.especialidad = especialidad;
     }
