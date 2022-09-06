@@ -15,3 +15,10 @@
     git push -u origin <rama>
 * Despues solo
     git push
+
+### Pull de master a sus ramas
+    ```python
+        # estando en sus ramas
+        git pull origin master --rebase
+    ```
+ Resolver los conflictos de merge si ocurren.
