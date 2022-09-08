@@ -10,6 +10,9 @@ package lab2;
  * @author Andres Moises
  */
 public class AppAuto {
+    public int name() {
+        return 1;
+    }
 
     /**
      * @param args the command line arguments
