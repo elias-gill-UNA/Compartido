@@ -2818,7 +2818,7 @@
 											"top": 399,
 											"width": 87,
 											"height": 13,
-											"text": "Sistema"
+											"text": "Web Banking"
 										},
 										{
 											"_type": "LabelView",
@@ -4755,7 +4755,8 @@
 								"$ref": "AAAAAAGDIs6KaI/z72A="
 							},
 							"name": "listaTransaccion",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -4863,7 +4864,8 @@
 								"$ref": "AAAAAAGDItPakZXx5JU="
 							},
 							"name": "nombreBanco",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -4944,7 +4946,8 @@
 								"$ref": "AAAAAAGDItTB+pnGIRc="
 							},
 							"name": "idTransaccion",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4963,7 +4966,8 @@
 								"$ref": "AAAAAAGDItTB+pnGIRc="
 							},
 							"name": "datosCliente",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4972,7 +4976,8 @@
 								"$ref": "AAAAAAGDItTB+pnGIRc="
 							},
 							"name": "cuentaDestino",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -4981,7 +4986,8 @@
 								"$ref": "AAAAAAGDItTB+pnGIRc="
 							},
 							"name": "monto",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -5062,7 +5068,8 @@
 								"$ref": "AAAAAAGDItZWIaYBJ5g="
 							},
 							"name": "idCuenta",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5101,7 +5108,8 @@
 								"$ref": "AAAAAAGDItZWIaYBJ5g="
 							},
 							"name": "tarjetasAsociadas",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -5120,7 +5128,8 @@
 								"$ref": "AAAAAAGDItjBYriqiqs="
 							},
 							"name": "idServicio",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5129,7 +5138,8 @@
 								"$ref": "AAAAAAGDItjBYriqiqs="
 							},
 							"name": "descripcionServios",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				},
@@ -5139,7 +5149,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Sistema"
+					"name": "Web Banking"
 				},
 				{
 					"_type": "UMLClass",
@@ -5194,7 +5204,8 @@
 								"$ref": "AAAAAAGDIudHYSn0B2s="
 							},
 							"name": "medioPago",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5203,7 +5214,8 @@
 								"$ref": "AAAAAAGDIudHYSn0B2s="
 							},
 							"name": "descripcionServicio",
-							"visibility": "private"
+							"visibility": "private",
+							"type": ""
 						}
 					]
 				}
