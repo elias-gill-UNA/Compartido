@@ -1,6 +1,6 @@
 package ejercicio1;
 
-// @author Abeld
+// @author Abel Díaz 
 public class Ejercicio1 {
 
     public static void main(String[] args) {
