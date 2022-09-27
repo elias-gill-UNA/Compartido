@@ -3,6 +3,7 @@ package ejercicio3;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+// @Autor Elias Gill
 
 public class App extends JFrame {
 
