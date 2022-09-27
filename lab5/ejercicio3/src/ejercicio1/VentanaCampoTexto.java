@@ -1,16 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-package ejercicio1;
-
-/**
- * @author Rodrigo
- */
-// Fig. 12.9: TextFieldFrame.java
-// JTextFields and JPasswordFields.
+package eje3_gradle;
 
 import javax.swing.*;
 import java.awt.*;
