@@ -9,7 +9,12 @@ public class App extends JFrame {
     SystemTray tray;
 
     App() {
-        super("Barra de servicios - App");
+        VentanaCampoTexto textFieldFrame = new VentanaCampoTexto();
+        textFieldFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        textFieldFrame.setSize(450, 200);
+        textFieldFrame.setVisible(true);
+        textFieldFrame.setLocation(450, 200);
+
         System.out.println("Creando la instancia");
 
         // En esta sección se agrega el código que podría lanzar error
@@ -50,11 +55,8 @@ public class App extends JFrame {
             // funcion de abrir ventana
             defaultItem.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    VentanaCampoTexto textFieldFrame = new VentanaCampoTexto();
-                    textFieldFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    textFieldFrame.setSize(450, 200);
-                    textFieldFrame.setVisible(true);
-                    textFieldFrame.setLocation(450, 200);
+                    setVisible(true);
+                    setExtendedState(JFrame.NORMAL);
                 }
             });
             popup.add(defaultItem);
