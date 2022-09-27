@@ -98,7 +98,7 @@ public class App extends JFrame {
                     textFieldFrame.setVisible(true);
                     System.out.println("Icono removido de la bandeja de sistema");
                 }
-
+                System.out.println(System.getProperty("user.dir"));
                 if (e.getNewState() == NORMAL) {
                     tray.remove(trayIcon);
                     textFieldFrame.setVisible(true);
