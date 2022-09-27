@@ -35,7 +35,7 @@ public class App extends JFrame {
             // get the system tray and add an image to it
             tray = SystemTray.getSystemTray();
             Image image = Toolkit.getDefaultToolkit()
-                    .getImage("C:\\iconos-vista\\_conos\\+ìconos\\Finanzas\\finance_icons\\PNG\\png128\\coins.png");
+                    .getImage(System.getProperty("user.dir") + "/aguja.png");
 
             // crear el menu del tray
             PopupMenu popup = new PopupMenu();
