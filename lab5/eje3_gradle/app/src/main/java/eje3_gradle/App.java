@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class App extends JFrame {
+
     TrayIcon trayIcon;
     SystemTray tray;
 
@@ -55,8 +56,8 @@ public class App extends JFrame {
             // funcion de abrir ventana
             defaultItem.addActionListener(new ActionListener() {
                 public void actionPerformed(ActionEvent e) {
-                    setVisible(true);
-                    setExtendedState(JFrame.NORMAL);
+                    textFieldFrame.setVisible(true);
+                    textFieldFrame.setExtendedState(JFrame.NORMAL);
                 }
             });
             popup.add(defaultItem);
@@ -70,12 +71,12 @@ public class App extends JFrame {
         }
 
         // inicio del método para gestionar la bandeja de sistema
-        addWindowStateListener(new WindowStateListener() {
+        textFieldFrame.addWindowStateListener(new WindowStateListener() {
             public void windowStateChanged(WindowEvent e) {
                 if (e.getNewState() == ICONIFIED) {
                     try {
                         tray.add(trayIcon);
-                        setVisible(false);
+                        textFieldFrame.setVisible(false);
                         System.out.println("Agregando a bandeja de sistema");
                     } catch (AWTException ex) {
                         System.out.println("No se pudo agregar a la bandeja de sistema");
@@ -85,7 +86,7 @@ public class App extends JFrame {
                 if (e.getNewState() == 7) {
                     try {
                         tray.add(trayIcon);
-                        setVisible(false);
+                        textFieldFrame.setVisible(false);
                         System.out.println("Agregado a la bandeja de sistema");
                     } catch (AWTException ex) {
                         System.out.println("No se puede agregar");
@@ -94,23 +95,18 @@ public class App extends JFrame {
 
                 if (e.getNewState() == MAXIMIZED_BOTH) {
                     tray.remove(trayIcon);
-                    setVisible(true);
+                    textFieldFrame.setVisible(true);
                     System.out.println("Icono removido de la bandeja de sistema");
                 }
 
                 if (e.getNewState() == NORMAL) {
                     tray.remove(trayIcon);
-                    setVisible(true);
+                    textFieldFrame.setVisible(true);
                     System.out.println("Icono removido");
                 }
             }
         });
 
-        // fin del método para bandeja de sistema
-        setIconImage(Toolkit.getDefaultToolkit().getImage("coins.png"));
-        setVisible(true);
-        setSize(300, 200);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
