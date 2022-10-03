@@ -4,15 +4,13 @@ import java.util.Scanner;
 public class Lab61 {
 
     public static void main(String[] args) {
-        
-        int[] arreglo={0,0,0,0};/*arreglo con tamaño 4, porque 4 numeros son los que son necesarios almacenar, no 5, porque pueden ser 4 
-        numero distintos*/
+        /*arreglo con tamaño 4, porque 4 numeros son los que son necesarios almacenar*/
+        int[] arreglo={0,0,0,0};
         int numero=0;
         int contador=0;
         
         while(contador<5){//se le pide al usuario ingresar 5 numeros siempre
-            
-            while(numero<10 || numero>100){//si no esta entre el rango solicitado
+            while(numero <= 10 || numero >= 100){//si no esta entre el rango solicitado
                 System.out.println("ingrese un valor entre 10 y 100");
                 Scanner eleccion = new Scanner(System.in);
                 numero = eleccion.nextInt();
