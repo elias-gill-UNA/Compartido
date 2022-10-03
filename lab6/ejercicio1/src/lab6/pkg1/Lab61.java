@@ -5,7 +5,7 @@ public class Lab61 {
 
     public static void main(String[] args) {
         
-        int[] arreglo={0,0,0,0};/*arreglo con tamaño 4, porque 4 numeros son los que son necesarios almacenar, no 5, pq pueden ser 4 
+        int[] arreglo={0,0,0,0};/*arreglo con tamaño 4, porque 4 numeros son los que son necesarios almacenar, no 5, porque pueden ser 4 
         numero distintos*/
         int numero=0;
         int contador=0;
