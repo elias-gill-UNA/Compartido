@@ -12,10 +12,6 @@ public class App {
 	boolean llenoCaro = false;
 	Scanner con = new Scanner(System.in);
 
-	public String getGreeting() {
-		return "Hello World!";
-	}
-
 	public void app() {
 		// menu principal
 		int eleccion = 0;
@@ -24,6 +20,7 @@ public class App {
 			System.out.println("Elija una opcion:");
 			System.out.println("1- Primera clase");
 			System.out.println("2- Clase turista");
+			System.out.println("69- salir");
 			System.out.print(">> ");
 			try {
 				eleccion = Integer.parseInt(con.nextLine());
@@ -36,7 +33,9 @@ public class App {
 				pasajePrimeraClase();
 			} else if (eleccion == 2) {
 				pasajeEconomico();
-			}
+			} else if (eleccion == 69) {
+                System.exit(0);
+            }
 		}
 	}
 
