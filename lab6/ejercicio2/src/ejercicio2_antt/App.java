@@ -13,32 +13,32 @@ public class App {
     boolean llenoCaro = false;
     Scanner con = new Scanner(System.in);
 
-	public void app() {
-		// menu principal
-		int eleccion = 0;
-		while (true) {
-			// preguntar la eleccion
-			System.out.println("Elija una opcion:");
-			System.out.println("1- Primera clase");
-			System.out.println("2- Clase turista");
-			System.out.println("69- salir");
-			System.out.print(">> ");
-			try {
-				eleccion = Integer.parseInt(con.nextLine());
-			} catch (Exception e) {
-				System.out.println("Valor invalido o error del sistema");
-			}
+    public void app() {
+        // menu principal
+        int eleccion = 0;
+        while (true) {
+            // preguntar la eleccion
+            System.out.println("Elija una opcion:");
+            System.out.println("1- Primera clase");
+            System.out.println("2- Clase turista");
+            System.out.println("69- salir");
+            System.out.print(">> ");
+            try {
+                eleccion = Integer.parseInt(con.nextLine());
+            } catch (Exception e) {
+                System.out.println("Valor invalido o error del sistema");
+            }
 
-			// realizar la carga del pasaje
-			if (eleccion == 1) {
-				pasajePrimeraClase();
-			} else if (eleccion == 2) {
-				pasajeEconomico();
-			} else if (eleccion == 69) {
+            // realizar la carga del pasaje
+            if (eleccion == 1) {
+                pasajePrimeraClase();
+            } else if (eleccion == 2) {
+                pasajeEconomico();
+            } else if (eleccion == 69) {
                 System.exit(0);
             }
-		}
-	}
+        }
+    }
 
     private void pasajePrimeraClase() {
         int i = 0;
