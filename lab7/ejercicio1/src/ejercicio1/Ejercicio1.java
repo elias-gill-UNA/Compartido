@@ -4,7 +4,7 @@ package ejercicio1;
 public class Ejercicio1 {
 
     public static void main(String[] args) {
-        System.out.println("Formatos: \n1)MM/DD/AAAA\n2)mes dia, año\n3)DD AAAA");
+        System.out.println("Formatos: \n1)MM/DD/AAAA\n2)mes dia, año\n3)DDD AAAA");
         System.out.println("\nCasos de Prueba");
 
         System.out.println("Caso 1:");
