@@ -19,7 +19,7 @@ public class Ejercicio1 {
         Fecha f3 = new Fecha(294, 2022);
         f3.imprimirFecha();
 
-        System.out.println("");
+        System.out.println("\n -- Casos NO validos -- ");
         // Prueba de las funciones de validacion
         f1 = new Fecha(2, 29, 2003);            // 2003 no es bisiesto
         f2 = new Fecha("julioo", 21, 2002);     // esta mal escrito el mes
