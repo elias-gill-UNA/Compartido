@@ -10,7 +10,7 @@ package lab2;
  */
 public
 class usarInterfaz { // clase donde voy a probar la interfaz, va a ejecutar un metodo distinto para
-                     // objeto que se le pase
+    // objeto que se le pase
     private accionesAuto a;
 
     public usarInterfaz(accionesAuto a) {
