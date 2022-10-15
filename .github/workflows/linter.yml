@@ -1,6 +1,9 @@
 # Example workflow
 name: Format
-on: [push]
+on:
+  workflow_run:
+      types: [push, pull_request]
+      branches: "!master"
 
 jobs:
   formatting:
