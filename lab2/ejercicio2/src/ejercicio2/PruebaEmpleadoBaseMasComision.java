@@ -1,9 +1,10 @@
-package  ejercicio2;
+package ejercicio2;
 
 public class PruebaEmpleadoBaseMasComision {
     public static void main(String[] args) {
-        
-        EmpleadoBaseMasComision empleado = new EmpleadoBaseMasComision("Elias", "Gill", "123456", 1100000, 0.25, 1200000);
+
+        EmpleadoBaseMasComision empleado =
+                new EmpleadoBaseMasComision("Elias", "Gill", "123456", 1100000, 0.25, 1200000);
 
         // datos originales
         System.out.println("\nDatos originales");

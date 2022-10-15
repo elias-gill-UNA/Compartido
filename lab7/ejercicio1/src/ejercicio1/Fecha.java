@@ -8,8 +8,20 @@ public class Fecha {
     private int anio;
     private int ddd;
     private String mesS;
-    private String[] meses = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto",
-        "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+    private String[] meses = {
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
+    };
     private int[] cantiDias = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
     // Primer caso
@@ -55,7 +67,6 @@ public class Fecha {
                 this.ddd += dia;
                 break;
             }
-
         }
     }
 
@@ -141,5 +152,4 @@ public class Fecha {
         System.out.println(mesS + " " + dia + ", " + anio);
         System.out.println(ddd + " " + anio);
     }
-
 }

@@ -6,20 +6,22 @@ import java.util.Scanner;
 public class Ejercicio2 {
 
     public static void main(String[] args) {
-        int bandera = 0;//si el usuario quere dejar de meter valores
+        int bandera = 0; // si el usuario quere dejar de meter valores
         int ganancias[] = {0, 0, 0, 0, 0};
         Scanner eleccion = new Scanner(System.in);
         int precios[] = {10000, 15000, 20000, 25000, 30000};
         int opcion;
         while (bandera == 0) {
-            System.out.print("Ingrese una opción: " + "\n1. Para cargar las ganancias."
-                    + "\n2. Para notificar las ganancias." + "\n3. Para salir.");
+            System.out.print(
+                    "Ingrese una opción: "
+                            + "\n1. Para cargar las ganancias."
+                            + "\n2. Para notificar las ganancias."
+                            + "\n3. Para salir.");
             do {
                 System.out.print("\nOpción:");
                 opcion = eleccion.nextInt();
                 if (opcion != 1 && opcion != 2 && opcion != 3) {
                     System.out.println("Ingrese una opción valida!\n");
-
                 }
             } while (opcion != 1 && opcion != 2 && opcion != 3);
 
@@ -73,8 +75,13 @@ public class Ejercicio2 {
     static void mostrar(int[] ganancias, int[] precios) {
         int bandera = 0, contador = 0;
         while (bandera == 0) {
-            System.out.println("La cantidad de productos" + (contador + 1) + " que se vendieron son "
-                    + ganancias[contador] + " y las ganancias fueron " + ganancias[contador] * precios[contador]);
+            System.out.println(
+                    "La cantidad de productos"
+                            + (contador + 1)
+                            + " que se vendieron son "
+                            + ganancias[contador]
+                            + " y las ganancias fueron "
+                            + ganancias[contador] * precios[contador]);
             contador++;
             if (contador == 5) {
                 bandera = 1;
@@ -82,5 +89,4 @@ public class Ejercicio2 {
         }
         System.out.println("");
     }
-
 }

@@ -22,13 +22,13 @@ public class Lab72 {
 
         for (int i = 0; i < 6; i++) {
             papa[i].mostrarDescripcion();
-            if (papa[i].tipo == 2) {// si es un objeto de tipo "figura bidimensional"
+            if (papa[i].tipo == 2) { // si es un objeto de tipo "figura bidimensional"
                 System.out.println("Mi area es: " + papa[i].obtenerArea());
-            } else {// si es un objeto de tipo "figura tridimensional"
+            } else { // si es un objeto de tipo "figura tridimensional"
                 System.out.println("Mi area es: " + papa[i].obtenerArea());
                 System.out.println("Mi volumen es: " + papa[i].obtenerVolumen());
             }
-            System.out.println("");// espacio para que salga mas bonito
+            System.out.println(""); // espacio para que salga mas bonito
         }
     }
 }

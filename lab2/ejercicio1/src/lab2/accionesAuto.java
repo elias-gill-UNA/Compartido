@@ -6,15 +6,19 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-//creacion de la interfaz, donde estan los metodos abstractos que vamos a sobreescribir
+// creacion de la interfaz, donde estan los metodos abstractos que vamos a sobreescribir
 public interface accionesAuto {
     public abstract void cantidadRuedas();
+
     public abstract void sonarVocina();
+
     public abstract void acelerar();
+
     public abstract void frenar();
+
     public abstract void arrancar();
+
     public abstract void parar();
 }

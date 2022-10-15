@@ -9,8 +9,7 @@ public class Fecha {
     private int anio;
 
     // Constructor que inicializa las tres variables de instancia
-    Fecha() {
-    }
+    Fecha() {}
 
     Fecha(int dia, int mes, int anio) {
         this.dia = dia;
@@ -47,5 +46,4 @@ public class Fecha {
     public void mostrarFecha() {
         System.out.println(dia + "/" + mes + "/" + anio);
     }
-
 }

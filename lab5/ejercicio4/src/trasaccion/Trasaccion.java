@@ -12,5 +12,4 @@ public class Trasaccion {
         costo client3 = new costo(987789, 18, 6, 980000);
         client3.costo_trasanccion();
     }
-
 }
