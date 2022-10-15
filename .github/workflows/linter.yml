@@ -4,7 +4,11 @@ name: Format
 on:
   push:
     branches:
-      - master
+      - '!master'
+
+  pull_request:
+    branches:
+      - '!master'
 
 jobs:
 
