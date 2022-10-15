@@ -1,32 +1,19 @@
-name: Lint Code Base
-# Start the job on all push
+# Example workflow
+name: Format
+
 on:
   push:
-    branches-ignore: [master, main]
-    # Remove the line above to run when pushing to master
-  pull_request:
-    branches: [master, main]
+    branches:
+      - master
 
-# Set the Job
 jobs:
-  build:
-    name: Lint Code Base
+
+  formatting:
     runs-on: ubuntu-latest
-
-    # Load all steps
     steps:
-      # Checkout the code base
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2 # v2 minimum required
+      - uses: axel-op/googlejavaformat-action@v3
         with:
-          # Full git history is needed to get a proper
-          # list of changed files within `super-linter`
-          fetch-depth: 0
-
-      # Run Linter against code base
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          args: "--skip-sorting-imports --replace"
+          # Recommended if you use MacOS:
+          # githubToken: ${{ secrets.GITHUB_TOKEN }}
