@@ -9,6 +9,6 @@ jobs:
       - uses: actions/checkout@v2 # v2 minimum required
       - uses: axel-op/googlejavaformat-action@v3
         with:
-          args: "--skip-sorting-imports --replace"
+          args: "--skip-sorting-imports --replace --aosp"
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          files-excluded: '*lab5/ejercicio3*'
+          files-excluded: '*/lab5/ejercicio3'
