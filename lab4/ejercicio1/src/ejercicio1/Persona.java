@@ -48,7 +48,14 @@ public class Persona {
     }
 
     public void vizualizar() {
-        System.out.println("Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nNúmero de Cedula: "
-                + getNroCedula() + "\nEdad: " + getEdad());
+        System.out.println(
+                "Nombre: "
+                        + getNombre()
+                        + "\nApellido: "
+                        + getApellido()
+                        + "\nNúmero de Cedula: "
+                        + getNroCedula()
+                        + "\nEdad: "
+                        + getEdad());
     }
 }

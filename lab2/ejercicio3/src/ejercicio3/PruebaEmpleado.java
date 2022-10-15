@@ -7,5 +7,4 @@ public class PruebaEmpleado {
         Empleado empleado = new Empleado("Abel", "Díaz", 5404806);
         System.out.println(empleado.toString());
     }
-
 }

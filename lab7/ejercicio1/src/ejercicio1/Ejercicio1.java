@@ -21,9 +21,8 @@ public class Ejercicio1 {
 
         System.out.println("\n -- Casos NO validos -- ");
         // Prueba de las funciones de validacion
-        f1 = new Fecha(2, 29, 2003);            // 2003 no es bisiesto
-        f2 = new Fecha("julioo", 21, 2002);     // esta mal escrito el mes
-        f3 = new Fecha(-32, 2017);              // la cantidad de dias no puede ser negativa
+        f1 = new Fecha(2, 29, 2003); // 2003 no es bisiesto
+        f2 = new Fecha("julioo", 21, 2002); // esta mal escrito el mes
+        f3 = new Fecha(-32, 2017); // la cantidad de dias no puede ser negativa
     }
-
 }

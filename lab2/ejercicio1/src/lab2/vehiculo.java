@@ -6,31 +6,33 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-public class vehiculo extends motorizado implements accionesAuto{//clase vehiculo que hereda de la clase maquina
+public class vehiculo extends motorizado
+        implements accionesAuto { // clase vehiculo que hereda de la clase maquina
     private int ruedas;
-    public void arrancar(){
+
+    public void arrancar() {
         System.out.println("Has arrancado el vehiculo");
     }
-    
-    public void frenar(){
+
+    public void frenar() {
         System.out.println("has frenado el vehiculo");
     }
-    
-    public void parar(){
+
+    public void parar() {
         System.out.println("has parado el vehiculo");
     }
-    
-    public void acelerar(){
+
+    public void acelerar() {
         System.out.println("has acelerado el vehiculo");
     }
-    
-    public void sonarVocina(){
+
+    public void sonarVocina() {
         System.out.println("PI PI PIIIIII");
     }
-    public void cantidadRuedas(){
+
+    public void cantidadRuedas() {
         System.out.println("no se sabe la cantidad");
     }
 }

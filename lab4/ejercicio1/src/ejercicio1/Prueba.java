@@ -17,5 +17,4 @@ public class Prueba {
         Empleado empleado = new Empleado(1, 3214567, 4567891, "Luis", "Morel", 22);
         empleado.vizualizar();
     }
-    
 }

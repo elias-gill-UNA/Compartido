@@ -6,7 +6,6 @@
 package horario;
 
 /**
- *
  * @author Admin
  */
 public class Horario {
@@ -15,8 +14,7 @@ public class Horario {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        hora hours=new hora(12,6,8);
+        hora hours = new hora(12, 6, 8);
         hours.setHorario();
     }
-    
 }

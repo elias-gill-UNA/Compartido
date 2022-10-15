@@ -33,7 +33,13 @@ public abstract class Empleado {
 
     @Override
     public String toString() {
-        return "Nombre: " + getPrimerNombre() + "\nApellido: " + getApellidoPaterno()
-                + "\nNumero de cedula: " + getNumeroCedula() + "\nSalario: " + getSalario();
+        return "Nombre: "
+                + getPrimerNombre()
+                + "\nApellido: "
+                + getApellidoPaterno()
+                + "\nNumero de cedula: "
+                + getNumeroCedula()
+                + "\nSalario: "
+                + getSalario();
     }
 }

@@ -12,14 +12,14 @@ public class Factura {
         this.descripcion_pieza = descripcion;
 
         // definir cant de articulos
-        if (precio < 0){
+        if (precio < 0) {
             this.cant_articulos = 0;
         } else {
             this.cant_articulos = cantidad;
         }
 
         // definir el precio
-        if (precio < 0){
+        if (precio < 0) {
             this.precio = 0.0;
         } else {
             this.precio = precio;
@@ -53,7 +53,7 @@ public class Factura {
     }
 
     public void setCantArticulos(int cant_articulos) {
-        if ( cant_articulos < 0){
+        if (cant_articulos < 0) {
             this.cant_articulos = 0;
         } else {
             this.cant_articulos = cant_articulos;
@@ -65,14 +65,14 @@ public class Factura {
     }
 
     public void setPrecio(double precio) {
-        if ( precio < 0){
+        if (precio < 0) {
             this.precio = 0.0;
         } else {
             this.precio = precio;
         }
     }
 
-    public void imprimir(){
+    public void imprimir() {
         System.out.println("Codigo: " + this.numero_pieza);
         System.out.println("Descripcion: " + this.descripcion_pieza);
         System.out.println("Precio: " + this.precio);

@@ -6,8 +6,12 @@ public class EmpleadoPorHora extends Empleado {
     private double horas;
     private double sueldo;
 
-    EmpleadoPorHora(String primerNombre, String apellidoPaterno,
-            int cedula, double sueldoHoras, double horasTrabajadas) {
+    EmpleadoPorHora(
+            String primerNombre,
+            String apellidoPaterno,
+            int cedula,
+            double sueldoHoras,
+            double horasTrabajadas) {
         super(primerNombre, apellidoPaterno, cedula);
         if (horasTrabajadas < 0 || horasTrabajadas > 168) {
             throw new IllegalArgumentException("Cantidad de horas trabajadas invalida!");
@@ -17,7 +21,6 @@ public class EmpleadoPorHora extends Empleado {
         }
         this.horas = horasTrabajadas;
         this.sueldo = sueldoHoras;
-
     }
 
     public void establecerHoras(double hora) {
@@ -54,7 +57,12 @@ public class EmpleadoPorHora extends Empleado {
 
     @Override
     public String toString() {
-        return super.toString() + "\nHoras Trabajadas: " + obtenerHoras()
-                + "\nSueldo por hora: " + obtenerSueldo() + "\nSueldo total: " + ingresos();
+        return super.toString()
+                + "\nHoras Trabajadas: "
+                + obtenerHoras()
+                + "\nSueldo por hora: "
+                + obtenerSueldo()
+                + "\nSueldo total: "
+                + ingresos();
     }
 }

@@ -1,4 +1,3 @@
-
 package lab7.pkg2;
 
 public class tetraedro extends figuraTridimensional {

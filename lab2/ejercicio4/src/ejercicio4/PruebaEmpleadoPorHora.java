@@ -7,5 +7,4 @@ public class PruebaEmpleadoPorHora {
         EmpleadoPorHora empleado = new EmpleadoPorHora("Abel", "Díaz", 5404806, 80000, 42);
         System.out.println(empleado.toString());
     }
-
 }

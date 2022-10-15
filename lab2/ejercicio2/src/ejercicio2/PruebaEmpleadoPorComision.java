@@ -2,7 +2,8 @@ package ejercicio2;
 
 public class PruebaEmpleadoPorComision {
     public static void main(String[] args) {
-        EmpleadoPorComision empleado = new EmpleadoPorComision("Elias", "Gill", "123456", 1100000, 0.25);
+        EmpleadoPorComision empleado =
+                new EmpleadoPorComision("Elias", "Gill", "123456", 1100000, 0.25);
 
         // datos originales
         System.out.println("\nDatos originales");

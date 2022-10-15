@@ -6,9 +6,7 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-public class comodidad { //clase padre de las demas clases creadas
-    
+public class comodidad { // clase padre de las demas clases creadas
 }
