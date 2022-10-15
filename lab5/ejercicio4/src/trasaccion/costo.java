@@ -23,14 +23,15 @@ class costo {
                 System.out.println(monto_total * 0.02);
                 System.out.println(
                         "Se excediò el lìmite de operaciones gratuitas y el sistema generarà un"
-                                + " costo de 2% sobre el monto de transacciòn");
-
+                         + " costo de 2% sobre el monto de transacciòn");
+                            
             } else {
                 System.out.println(monto_total * 0.05);
                 System.out.println(
                         "Se excediò el lìmite de operaciones gratuitas y el sistema generarà un"
-                                + " costo de 5% sobre el monto de transacciòn");
+                            + " costo de 5% sobre el monto de transacciòn");
             }
+            
         } else {
             System.out.println("No se ha excedido en el limite de transacciones");
         }
