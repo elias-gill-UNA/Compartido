@@ -23,9 +23,8 @@ public class Lab61 {
                 System.out.println("El numero es: " + numero);
                 System.out.println("");
             }
-            if (contador
-                    != 4) { // porque no es necesario seguir cargando valores en el arreglo de
-                            // duplicados
+            if (contador != 4) { // porque no es necesario seguir cargando valores en el arreglo de
+                // duplicados
                 arreglo[contador] = numero;
             }
             contador++; // para finalizar la bandera

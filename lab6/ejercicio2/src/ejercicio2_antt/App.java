@@ -105,7 +105,7 @@ public class App {
         } else {
             System.out.println(
                     "Lo sentimos, ya no quedan asientos disponibles.\n"
-                        + " El siguiente vuelo sale en 3 horas\n");
+                            + " El siguiente vuelo sale en 3 horas\n");
         }
     }
 
