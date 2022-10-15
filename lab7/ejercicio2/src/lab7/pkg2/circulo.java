@@ -8,7 +8,7 @@ public class circulo extends figuraBidimensional{
     };
     
     public circulo(String nombre,float lado){
-        this.nombre=nombre;
+        this.nombre= nombre;
         this.lado=lado;
     }
     
