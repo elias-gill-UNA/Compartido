@@ -1,6 +1,5 @@
 # Example workflow
 name: Format
-
 on:
   push:
     branches:
@@ -11,7 +10,6 @@ on:
       - '!master'
 
 jobs:
-
   formatting:
     runs-on: ubuntu-latest
     steps:
@@ -19,5 +17,4 @@ jobs:
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--skip-sorting-imports --replace"
-          # Recommended if you use MacOS:
-          # githubToken: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
