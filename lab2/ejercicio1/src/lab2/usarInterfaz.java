@@ -6,37 +6,38 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-public class usarInterfaz{//clase donde voy a probar la interfaz, va a ejecutar un metodo distinto para objeto que se le pase
+public
+class usarInterfaz { // clase donde voy a probar la interfaz, va a ejecutar un metodo distinto para
+                     // objeto que se le pase
     private accionesAuto a;
-    
-    public usarInterfaz(accionesAuto a){
-        this.a=a;
+
+    public usarInterfaz(accionesAuto a) {
+        this.a = a;
     }
-    
-    public void cantidadRuedas(){
+
+    public void cantidadRuedas() {
         this.a.cantidadRuedas();
     }
-    
-    public void sonarVocina(){
+
+    public void sonarVocina() {
         this.a.sonarVocina();
     }
-    
-    public void acelerar(){
+
+    public void acelerar() {
         this.a.acelerar();
     }
-    
-    public void frenar(){
+
+    public void frenar() {
         this.a.frenar();
     }
-    
-    public void parar(){
+
+    public void parar() {
         this.a.parar();
     }
-    
-    public void arrancar(){
+
+    public void arrancar() {
         this.a.arrancar();
     }
 }

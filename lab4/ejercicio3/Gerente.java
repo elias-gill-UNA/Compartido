@@ -10,7 +10,13 @@ public class Gerente extends Empleado {
 
     private String titulo = "Gerente";
 
-    Gerente(String primerNombre, String apellidoPaterno, int numeroCedula, String departamento, String tipoGerente, double salario) {
+    Gerente(
+            String primerNombre,
+            String apellidoPaterno,
+            int numeroCedula,
+            String departamento,
+            String tipoGerente,
+            double salario) {
         super(primerNombre, apellidoPaterno, numeroCedula, salario);
         this.departamento = departamento;
         this.tipoGerente = tipoGerente;
@@ -34,9 +40,19 @@ public class Gerente extends Empleado {
 
     @Override
     public String toString() {
-        return "Nombre: " + super.getPrimerNombre() + "\nApellido: " + super.getApellidoPaterno()
-                + "\nNumero de cedula: " + super.getNumeroCedula() + "\nTitulo: " + titulo + "\nDepartamento: " + getDepartamento()
-                + "\nTipo de Gerente: " + getTipoGerente() + "\nSalario: " + super.getSalario();
+        return "Nombre: "
+                + super.getPrimerNombre()
+                + "\nApellido: "
+                + super.getApellidoPaterno()
+                + "\nNumero de cedula: "
+                + super.getNumeroCedula()
+                + "\nTitulo: "
+                + titulo
+                + "\nDepartamento: "
+                + getDepartamento()
+                + "\nTipo de Gerente: "
+                + getTipoGerente()
+                + "\nSalario: "
+                + super.getSalario();
     }
-
 }

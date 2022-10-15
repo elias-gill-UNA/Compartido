@@ -6,7 +6,13 @@ public class Empleado extends Persona {
     private int idEmpleado;
     private float salario;
 
-    public Empleado(int idEmpleado, float salario, int nroCedula, String nombre, String apellido, int edad) {
+    public Empleado(
+            int idEmpleado,
+            float salario,
+            int nroCedula,
+            String nombre,
+            String apellido,
+            int edad) {
         super(nroCedula, nombre, apellido, edad);
         this.idEmpleado = idEmpleado;
         this.salario = salario;
@@ -30,8 +36,18 @@ public class Empleado extends Persona {
 
     @Override
     public void vizualizar() {
-        System.out.println("Nombre: " + getNombre() + "\nApellido: " + getApellido() + "\nNúmero de Cedula: "
-                + getNroCedula() + "\nEdad: " + getEdad() + "\nID de Empleado: " + getIdEmpleado()
-                + "\nSalario: " + getSalario());
+        System.out.println(
+                "Nombre: "
+                        + getNombre()
+                        + "\nApellido: "
+                        + getApellido()
+                        + "\nNúmero de Cedula: "
+                        + getNroCedula()
+                        + "\nEdad: "
+                        + getEdad()
+                        + "\nID de Empleado: "
+                        + getIdEmpleado()
+                        + "\nSalario: "
+                        + getSalario());
     }
 }

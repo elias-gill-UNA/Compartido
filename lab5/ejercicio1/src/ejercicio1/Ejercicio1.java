@@ -1,6 +1,6 @@
 package ejercicio1;
 
-// @author Abel Díaz 
+// @author Abel Díaz
 public class Ejercicio1 {
 
     public static void main(String[] args) {
@@ -41,5 +41,4 @@ public class Ejercicio1 {
             System.out.println("");
         }
     }
-
 }

@@ -23,7 +23,5 @@ public class PruebaFecha {
         System.out.println("Año: " + fecha2.getAnio());
         System.out.print("FECHA: ");
         fecha2.mostrarFecha();
-
     }
-
 }

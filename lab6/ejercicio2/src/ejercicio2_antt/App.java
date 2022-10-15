@@ -46,8 +46,7 @@ public class App {
         while (i < 5) {
             // asiento libre
             if (!asientos[i]) {
-                System.out.println("\nPrimera Clase \tAsiento: " + (1 + i)
-                        + "\n");
+                System.out.println("\nPrimera Clase \tAsiento: " + (1 + i) + "\n");
                 asientos[i] = true;
                 return;
             }
@@ -63,8 +62,7 @@ public class App {
         while (i < 10) {
             // buscar un asiento libre
             if (!asientos[i]) {
-                System.out.println("\nClase economica \tAsiento: " + (1 + i)
-                        + "\n");
+                System.out.println("\nClase economica \tAsiento: " + (1 + i) + "\n");
                 asientos[i] = true;
                 return;
             }
@@ -79,7 +77,8 @@ public class App {
         // si es que alguna de las dos tiene espacio preguntar por el cambio
         if (!llenoCaro || !llenoEconomico) {
             // preguntar al usuario si es que desea realizar el cambio de asiento
-            System.out.println("La seccion se encuentra llena. \nAcepta ser asignado a la" + cambio + " ?");
+            System.out.println(
+                    "La seccion se encuentra llena. \nAcepta ser asignado a la" + cambio + " ?");
             System.out.println("1- Si");
             System.out.println("2- No");
             System.out.print(">> ");
@@ -104,8 +103,9 @@ public class App {
                 pasajeEconomico();
             }
         } else {
-            System.out
-                    .println("Lo sentimos, ya no quedan asientos disponibles.\n El siguiente vuelo sale en 3 horas\n");
+            System.out.println(
+                    "Lo sentimos, ya no quedan asientos disponibles.\n"
+                        + " El siguiente vuelo sale en 3 horas\n");
         }
     }
 
