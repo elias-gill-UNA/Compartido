@@ -28,7 +28,11 @@ class Empleado {
 
     @Override
     public String toString() {
-        return "Nombre: " + obtenerPrimerNombre() + "\nApellido: " + obtenerApellidoPaterno()
-                + "\nNumero de cedula: " + obtenerNumeroCedula();
+        return "Nombre: "
+                + obtenerPrimerNombre()
+                + "\nApellido: "
+                + obtenerApellidoPaterno()
+                + "\nNumero de cedula: "
+                + obtenerNumeroCedula();
     }
 }

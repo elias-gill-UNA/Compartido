@@ -6,33 +6,32 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-public class automovil extends vehiculo{//clase automovil que hereda de la clase vehiculo
-    private int ruedas=4;
-    
-    public void cantidadRuedas(){
-        System.out.println("la cantidad de ruedas es "+4);
+public class automovil extends vehiculo { // clase automovil que hereda de la clase vehiculo
+    private int ruedas = 4;
+
+    public void cantidadRuedas() {
+        System.out.println("la cantidad de ruedas es " + 4);
     }
-    
-    public void sonarVocina(){
+
+    public void sonarVocina() {
         System.out.println("CLAN CLAAAAAAN");
     }
-    
-    public void arrancar(){
+
+    public void arrancar() {
         System.out.println("Has arrancado el auto");
     }
-    
-    public void frenar(){
+
+    public void frenar() {
         System.out.println("has frenado el auto");
     }
-    
-    public void parar(){
+
+    public void parar() {
         System.out.println("has parado el auto");
     }
-    
-    public void acelerar(){
+
+    public void acelerar() {
         System.out.println("has acelerado el auto");
     }
 }

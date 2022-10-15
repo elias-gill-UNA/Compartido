@@ -6,9 +6,6 @@
 package lab2;
 
 /**
- *
  * @author Andres Moises
  */
-public class motorizado extends metodoTransporte{
-    
-}
+public class motorizado extends metodoTransporte {}

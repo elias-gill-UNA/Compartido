@@ -6,7 +6,13 @@ public class Cliente extends Persona {
     private int idCliente;
     private float montoCredito;
 
-    public Cliente(int idCliente, float montoCredito, int nroCedula, String nombre, String apellido, int edad) {
+    public Cliente(
+            int idCliente,
+            float montoCredito,
+            int nroCedula,
+            String nombre,
+            String apellido,
+            int edad) {
         super(nroCedula, nombre, apellido, edad);
         this.idCliente = idCliente;
         this.montoCredito = montoCredito;
@@ -27,5 +33,4 @@ public class Cliente extends Persona {
     public void setMontoCredito(float mmontoCredito) {
         this.montoCredito = mmontoCredito;
     }
-
 }
