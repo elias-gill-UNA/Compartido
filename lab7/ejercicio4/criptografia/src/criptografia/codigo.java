@@ -27,12 +27,14 @@ public class codigo extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup8 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         original = new javax.swing.JTextField();
         resultado = new javax.swing.JTextField();
         cifrar = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        ci = new javax.swing.JRadioButton();
+        de = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -54,19 +56,23 @@ public class codigo extends javax.swing.JFrame {
             }
         });
 
-        cifrar.setText("Cifrar");
+        cifrar.setText("PROCESAR");
         cifrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cifrarActionPerformed(evt);
             }
         });
 
-        jButton2.setText("Descifrar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup8.add(ci);
+        ci.setText("Crifrar");
+        ci.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                ciActionPerformed(evt);
             }
         });
+
+        buttonGroup8.add(de);
+        de.setText("Descifrar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -75,22 +81,29 @@ public class codigo extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(71, 71, 71)
-                        .addComponent(cifrar))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 233, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(41, 41, 41)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(52, 52, 52)
+                                .addComponent(ci)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 189, Short.MAX_VALUE)
+                        .addComponent(cifrar, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(46, 46, 46)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(original, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(15, 15, 15)))
-                    .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(43, 43, 43))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(original, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(58, 58, 58))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(de)
+                            .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(43, 43, 43))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,10 +116,12 @@ public class codigo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(resultado, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
+                .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cifrar)
-                    .addComponent(jButton2))
+                    .addComponent(ci)
+                    .addComponent(de))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 73, Short.MAX_VALUE)
+                .addComponent(cifrar)
                 .addGap(41, 41, 41))
         );
 
@@ -118,19 +133,34 @@ public class codigo extends javax.swing.JFrame {
     }//GEN-LAST:event_originalActionPerformed
 
     private void cifrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cifrarActionPerformed
-        int numero=Integer.parseInt(original.getText());
-        int ultimo=numero%10;
-        numero=numero/10;
-        int tercero=numero%10;
-        numero=numero/10;
-        int segundo=numero%10;
-        int primero=numero/10;
-        System.out.println("El ultimo digito es "+ultimo);
-        System.out.println("El tercer digito es "+tercero);
-        System.out.println("El segundo digito es "+segundo);
-        System.out.println("El primer digito es "+primero);
-        String codificado=((tercero+7)%10)+""+((ultimo+7)%10)+""+((primero+7)%10)+""+((segundo+7)%10);
-        resultado.setText(codificado);
+        if (ci.isSelected()) {
+            int numero = Integer.parseInt(original.getText());
+            int ultimo = numero % 10;
+            numero = numero / 10;
+            int tercero = numero % 10;
+            numero = numero / 10;
+            int segundo = numero % 10;
+            int primero = numero / 10;
+            System.out.println("El ultimo digito es " + ultimo);
+            System.out.println("El tercer digito es " + tercero);
+            System.out.println("El segundo digito es " + segundo);
+            System.out.println("El primer digito es " + primero);
+            String codificado = ((tercero + 7) % 10) + "" + ((ultimo + 7) % 10) + "" + ((primero + 7) % 10) + "" + ((segundo + 7) % 10);
+            resultado.setText(codificado);
+        }
+        if(de.isSelected()){
+            int numero=Integer.parseInt(original.getText());
+            int ultimo=numero%10;
+            numero=numero/10;
+            int tercero=numero%10;
+            numero=numero/10;
+            int segundo=numero%10;
+            int primero=numero/10;
+            String codificado=((primero+3)%10)+""+((segundo+3)%10)+""+((tercero+3)%10)+""+((ultimo+3)%10);
+            String decodificado=((tercero+3)%10)+""+((ultimo+3)%10)+""+((primero+3)%10)+""+((segundo+3)%10);
+            resultado.setText(decodificado);
+        }
+        
         
         
                 
@@ -141,17 +171,9 @@ public class codigo extends javax.swing.JFrame {
         
     }//GEN-LAST:event_resultadoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        int numero=Integer.parseInt(original.getText());
-        int ultimo=numero%10;
-        numero=numero/10;
-        int tercero=numero%10;
-        numero=numero/10;
-        int segundo=numero%10;
-        int primero=numero/10;
-        String codificado=((primero+3)%10)+""+((segundo+3)%10)+""+((tercero+3)%10)+""+((ultimo+3)%10);
-        String decodificado=((tercero+3)%10)+""+((ultimo+3)%10)+""+((primero+3)%10)+""+((segundo+3)%10);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    private void ciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ciActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ciActionPerformed
 
     /**
      * @param args the command line arguments
@@ -189,8 +211,10 @@ public class codigo extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup8;
+    private javax.swing.JRadioButton ci;
     private javax.swing.JButton cifrar;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JRadioButton de;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JTextField original;
