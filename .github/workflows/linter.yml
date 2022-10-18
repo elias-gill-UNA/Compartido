@@ -3,7 +3,8 @@ name: jormat
 on:
   push:
     branches:
-      - !master
+      - '!master'
+
 
 jobs:
 
@@ -15,4 +16,4 @@ jobs:
         with:
           args: "--skip-sorting-imports --replace"
           githubToken: ${{ secrets.GITHUB_TOKEN }}
-          #files-excluded: "lab5"
+          files-excluded: "lab5"
