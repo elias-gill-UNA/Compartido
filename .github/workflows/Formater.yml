@@ -1,5 +1,5 @@
 # Example workflow
-name: JavaFormater
+name: Format
 
 on:
   push:
@@ -14,5 +14,7 @@ jobs:
       - uses: actions/checkout@v2 # v2 minimum required
       - uses: axel-op/googlejavaformat-action@v3
         with:
-          args: "--set-exit-if-changed"
-          files-excluded: "lab5*"
+          args: "--skip-sorting-imports --replace"
+          # Recommended if you use MacOS:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          files-excluded: lab5
