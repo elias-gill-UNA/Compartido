@@ -19,3 +19,5 @@ jobs:
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--set-exit-if-changed"
+          files-excluded:
+            - "ejercicio5/"
