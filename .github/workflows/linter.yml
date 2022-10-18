@@ -1,21 +1,14 @@
 # Example workflow
 name: Format
-on:
-  push:
-    branches:
-      - '!master'
 
-  pull_request:
-    branches:
-      - '!master'
+on: [push, pull_request]
 
 jobs:
+
   formatting:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # v2 minimum required
       - uses: axel-op/googlejavaformat-action@v3
         with:
-          args: "--skip-sorting-imports --replace --aosp"
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          files-excluded: '/lab5/ejercicio3/'
+          args: "--set-exit-if-changed"
