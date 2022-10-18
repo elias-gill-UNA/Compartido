@@ -3,7 +3,8 @@ name: JavaFormater
 
 on: 
   push:
-    branches: "!main"
+    branches: 
+      - !master
 
 jobs:
 
