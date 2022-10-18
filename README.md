@@ -22,3 +22,4 @@
         git pull origin master --rebase
     ```
  Resolver los conflictos de merge si ocurren.
+
