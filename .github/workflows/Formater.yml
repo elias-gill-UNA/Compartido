@@ -1,7 +1,9 @@
 # Example workflow
 name: JavaFormater
 
-on: [push, pull_request]
+on: 
+  push:
+    branches: "!main"
 
 jobs:
 
@@ -12,4 +14,4 @@ jobs:
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--set-exit-if-changed"
-          files-excluded: "*lab5"
+          files-excluded: "lab5"
