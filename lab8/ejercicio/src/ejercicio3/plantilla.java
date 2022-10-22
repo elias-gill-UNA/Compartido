@@ -11,10 +11,10 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextArea;
 
-public class plantilla extends JFrame implements ActionListener {
-    public JTextArea listaInputs[];
+public abstract class plantilla extends JFrame implements ActionListener {
+    public JComponent[] listaInputs;
     public String listaTitulos[];
-    public JLabel res;
+    public JComponent res;
 
     // clase que crea la parte del contenido que es modificable
     private class contenidoModificable extends JComponent {
@@ -38,23 +38,28 @@ public class plantilla extends JFrame implements ActionListener {
             add(new JLabel(titulo));
             add(comp);
         }
+
+        public nuevoInput(JComponent comp, JComponent titulo) {
+            setLayout(new GridLayout(1, 2));
+            add(titulo);
+            add(comp);
+        }
     }
 
     public void actionPerformed(ActionEvent e) {
         calcular();
     }
 
-    // funcion que se debe sobreescribir en las clases hijas
-    public void calcular() {
-    }
+    abstract public void calcular();
 
     // TextFieldFrame constructor adds JTextFields to JFrame
-    public plantilla(JTextArea listaInputs[], String listaTitulos[]) throws Exception {
+    public plantilla(JComponent res, JComponent listaInputs[], String listaTitulos[]) throws Exception {
 
         super("Calculadora");
         setLayout(new BorderLayout());
         this.listaTitulos = listaTitulos;
         this.listaInputs = listaInputs;
+        this.res = res;
 
         // boton de calcular
         JButton button = new JButton("Calcular");
@@ -62,8 +67,7 @@ public class plantilla extends JFrame implements ActionListener {
 
         // contenido modificable
         add("Center", new contenidoModificable(listaInputs, listaTitulos));
-        add("South", res);
-        add("South", button);
+        add("South", new nuevoInput(button, res));
 
         // defualt size and options
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -73,9 +77,5 @@ public class plantilla extends JFrame implements ActionListener {
     }
 
     public plantilla(){
-    }
-
-    public plantilla nuevaPlantilla(JTextArea listaInputs[], String listaTitulos[]) throws Exception {
-        return new plantilla(listaInputs, listaTitulos);
     }
 }
