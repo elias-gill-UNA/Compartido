@@ -1,2 +1,0 @@
-eje3_gradle.VentanaCampoTexto
-eje3_gradle.VentanaCampoTexto$ManejadorCampoTexto
