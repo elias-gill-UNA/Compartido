@@ -5,17 +5,17 @@ import javax.swing.*;
 
 public class ejercicio3 extends plantilla implements test_interface {
     private class costo {
-        public int numero_cuenta, total_trasanciones_mes, limite_transacciones, monto_total;
+        public Float numero_cuenta, total_trasanciones_mes, limite_transacciones, monto_total;
 
         public costo(
                 int numero_cuenta,
                 int total_trasanciones_mes,
                 int limite_transacciones,
                 int monto_total) {
-            this.numero_cuenta = numero_cuenta;
-            this.total_trasanciones_mes = total_trasanciones_mes;
-            this.limite_transacciones = limite_transacciones;
-            this.monto_total = monto_total;
+            this.numero_cuenta = new Float(numero_cuenta);
+            this.total_trasanciones_mes = new Float(total_trasanciones_mes);
+            this.limite_transacciones = new Float(limite_transacciones);
+            this.monto_total = new Float(monto_total);
         }
 
         public void costo_trasanccion() {
@@ -41,7 +41,6 @@ public class ejercicio3 extends plantilla implements test_interface {
             new costo(456789, 10, 5, 120000),
             new costo(456, 9, 12, 2400000),
             new costo(987789, 18, 6, 980000)
-
     };
 
     static JTextPane listaInputs[] = new JTextPane[] {
@@ -70,10 +69,10 @@ public class ejercicio3 extends plantilla implements test_interface {
     public void calcular() {
         int resultado = 0;
         // aca estiran los datos de sus inputs
-        Integer input1 = Integer.parseInt(listaInputs[0].getText());
-        Integer input2 = Integer.parseInt(listaInputs[1].getText());
-        Integer input3 = Integer.parseInt(listaInputs[2].getText());
-        Integer input4 = Integer.parseInt(listaInputs[3].getText());
+        Float input1 = Float.parseFloat(listaInputs[0].getText());
+        Float input2 = Float.parseFloat(listaInputs[1].getText());
+        Float input3 = Float.parseFloat(listaInputs[2].getText());
+        Float input4 = Float.parseFloat(listaInputs[3].getText());
         for (costo c : cliente) {
             if (input1 == c.numero_cuenta) {
                 if (c.total_trasanciones_mes > c.limite_transacciones) {
@@ -94,7 +93,7 @@ public class ejercicio3 extends plantilla implements test_interface {
     }
 
     // funcion donde se realiza la logica del calculo
-    public Integer logica(Integer... parametros) {
+    public Integer logica(Float... parametros) {
 
         if ((parametros[0] - parametros[1]) <= 5) {
             System.out.println(parametros[3] * 0.02);
