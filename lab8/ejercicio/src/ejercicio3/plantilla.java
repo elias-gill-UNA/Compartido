@@ -9,7 +9,6 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
 
 public abstract class plantilla extends JFrame implements ActionListener {
     public JComponent[] listaInputs;
@@ -76,6 +75,6 @@ public abstract class plantilla extends JFrame implements ActionListener {
         setLocation(450, 200);
     }
 
-    public plantilla(){
+    public plantilla() {
     }
 }

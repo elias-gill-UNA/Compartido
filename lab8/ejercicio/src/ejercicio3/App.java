@@ -3,10 +3,10 @@ package ejercicio3;
 import javax.swing.*;
 // @Autor Elias Gill
 
-public class App extends plantilla implements calculadora {
+public class App extends plantilla implements test_interface {
     // primero definen sus inputs
     static JTextPane listaInputs[] = new JTextPane[] { new JTextPane(), new JTextPane() };
-    static String listaTitulos[] = new String[] { "neovim", "calculo diferencial"};
+    static String listaTitulos[] = new String[] { "neovim", "calculo diferencial" };
     static JTextPane res = new JTextPane();
 
     public App() throws Exception {
@@ -15,10 +15,12 @@ public class App extends plantilla implements calculadora {
 
     @Override
     public void calcular() {
+        // aca calculan las cosas
         Integer neovim = Integer.parseInt(listaInputs[0].getText());
         Integer calculo = Integer.parseInt(listaInputs[0].getText());
         Integer x = calculo + neovim;
 
+        // actualizar el resultado
         res.setText(x.toString());
     }
 
