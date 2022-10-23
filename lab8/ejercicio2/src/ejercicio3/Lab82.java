@@ -29,11 +29,16 @@ public class Lab82 extends plantilla implements test_interface {
     @Override
     public void calcular() {
         // aca estiran los datos de sus inputs
-        Float input1 = Float.parseFloat(listaInputs[0].getText()); // saca de neovim
-        Float input2 = Float.parseFloat(listaInputs[1].getText()); // saca de calculo
-        // actualizar el resultado
-        // res.setText(logica(input1,input2));
-        logica(input1, input2);
+        try {
+            Float input1 = Float.parseFloat(listaInputs[0].getText()); // saca de neovim
+            Float input2 = Float.parseFloat(listaInputs[1].getText()); // saca de calculo
+            // actualizar el resultado
+            // res.setText(logica(input1,input2));
+            logica(input1, input2);
+
+        } catch (Exception e) {
+            res.setText("VALORES INGRESADOS INVALIDOS");
+        }
     }
 
     // funcion donde se realiza la logica del calculo
