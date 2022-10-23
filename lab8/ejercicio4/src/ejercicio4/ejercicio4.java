@@ -23,9 +23,9 @@ public class ejercicio4 extends plantilla implements test_interface {
     public void calcular() {
         try {
             // Guarda los valores ingresados
-            float input1 = Float.parseFloat(listaInputs[0].getText()); // saca de neovim
-            float input2 = Float.parseFloat(listaInputs[1].getText()); // saca de calculo
-            logica(new Float[]{input1, input2});
+            float horas = Float.parseFloat(listaInputs[0].getText());
+            float tarifa = Float.parseFloat(listaInputs[1].getText());
+            logica(new Float[]{horas, tarifa});
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Ingrese solo números!");
         }
