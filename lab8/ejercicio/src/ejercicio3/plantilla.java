@@ -70,7 +70,7 @@ public abstract class plantilla extends JFrame implements ActionListener {
 
         // defualt size and options
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(450, 200);
+        setSize(700, 400);
         setVisible(true);
         setLocation(450, 200);
     }
