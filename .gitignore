@@ -3,6 +3,7 @@
 /ejercicio4/build/
 /ejercicio12/target/
 */bin/
+*.class
 /lab2/Ejercicio3/build/
 /lab2/Ejercicio3/nbproject/private/
 /lab2/ejercicio3/build/
