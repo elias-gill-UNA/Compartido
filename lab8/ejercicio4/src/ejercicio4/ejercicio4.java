@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextPane;
 import javax.swing.border.Border;
 
-public class App extends plantilla implements test_interface {
+public class ejercicio4 extends plantilla implements test_interface {
 
     static JTextPane listaInputs[] = new JTextPane[]{
         new JTextPane(), // horas tranajadas
@@ -58,7 +58,7 @@ public class App extends plantilla implements test_interface {
     // panel de resultado (pueden usar a7 nomas)
     static JTextPane res = new JTextPane();
 
-    public App() throws Exception {
+    public ejercicio4() throws Exception {
         super(res, listaInputs, listaTitulos);
         bordes();
 
@@ -74,7 +74,7 @@ public class App extends plantilla implements test_interface {
     public static void main(String[] args) {
         try {
             res.setEditable(false);
-            new App();
+            new ejercicio4();
         } catch (Exception e) {
             System.out.println(e);
         }
