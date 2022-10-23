@@ -70,7 +70,7 @@ public class ejercicio2 extends plantilla implements test_interface {
     public static void main(String[] args) {
         try {
             res.setEditable(false);
-            new ejercicio2icio2();
+            new ejercicio2();
         } catch (Exception e) {
             System.out.println(e);
         }
