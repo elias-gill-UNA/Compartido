@@ -5,7 +5,7 @@ import java.text.DecimalFormat;
 import javax.swing.*;
 // @Autor Elias Gill
 
-public class Lab82 extends plantilla implements test_interface {
+public class ejercicio2 extends plantilla implements test_interface {
 
     // primero definen sus inputs
     static JTextPane listaInputs[] = new JTextPane[] {
@@ -21,7 +21,7 @@ public class Lab82 extends plantilla implements test_interface {
     // panel de resultado (pueden usar a7 nomas)
     static JTextArea res = new JTextArea();
 
-    public Lab82() throws Exception {
+    public ejercicio2() throws Exception {
         super(res, listaInputs, listaTitulos);
     }
 
@@ -70,7 +70,7 @@ public class Lab82 extends plantilla implements test_interface {
     public static void main(String[] args) {
         try {
             res.setEditable(false);
-            new Lab82();
+            new ejercicio2icio2();
         } catch (Exception e) {
             System.out.println(e);
         }
