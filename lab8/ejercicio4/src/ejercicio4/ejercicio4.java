@@ -25,8 +25,7 @@ public class ejercicio4 extends plantilla implements test_interface {
             // Guarda los valores ingresados
             float input1 = Float.parseFloat(listaInputs[0].getText()); // saca de neovim
             float input2 = Float.parseFloat(listaInputs[1].getText()); // saca de calculo
-            // Actualiza el resultado
-            res.setText("Sueldo a recibir: " + logica(new Float[]{input1, input2}).toString());
+            logica(new Float[]{input1, input2});
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Ingrese solo números!");
         }
@@ -35,7 +34,7 @@ public class ejercicio4 extends plantilla implements test_interface {
 
     // Hace la parte lógica de los cálculos
     @Override
-    public Float logica(Float... list) {
+    public void logica(Float... list) {
         /*
             Si la cantidad de horas es menor o igual a cero, el sueldo bruto se
         considera cero por defecto.
@@ -53,7 +52,8 @@ public class ejercicio4 extends plantilla implements test_interface {
             }
             sueldoBruto = (float) (horasTrabajadas * tarifaPorHora + horasExtras * tarifaPorHora * 1.5);
         }
-        return sueldoBruto;
+        // Actualiza el resultado
+        res.setText("Sueldo a recibir: " + sueldoBruto);
     }
     // panel de resultado (pueden usar a7 nomas)
     static JTextPane res = new JTextPane();
