@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicios;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;

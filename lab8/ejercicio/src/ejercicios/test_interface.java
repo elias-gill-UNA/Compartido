@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicios;
 
 interface test_interface {
     void calcular();

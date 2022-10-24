@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicios;
 
 import javax.swing.*;
 // @Autor Elias Gill
