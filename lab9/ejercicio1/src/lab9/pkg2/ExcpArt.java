@@ -1,7 +1,5 @@
 package lab9.pkg2;
 
-import java.util.*;
-
 public class ExcpArt {
     static void atime() {
         int t, r;
@@ -11,6 +9,7 @@ public class ExcpArt {
         // posible division por 0
         try {
             t = 2 / r;
+            System.out.println("Division: " + t);
         } catch (ArithmeticException e) {
             System.out.println("El método atime-LP2 realizo una division entre 0");
         }
