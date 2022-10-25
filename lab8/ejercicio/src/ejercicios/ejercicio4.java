@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicios;
 
 // @author Abeld
 import java.awt.Color;
