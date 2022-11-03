@@ -3,6 +3,7 @@ package lab9.pkg2;
 import java.util.*;
 
 public class ExcpArt {
+
     static public float cociente(int a, int b) {
         try {
             float r = a / b;
@@ -13,7 +14,6 @@ public class ExcpArt {
     }
 
     static public void main(String[] arg) {
-        System.out.println("Ingrese el dividendo");
         Scanner sc = new Scanner(System.in);
         int a = 0;
         int b = 0;
