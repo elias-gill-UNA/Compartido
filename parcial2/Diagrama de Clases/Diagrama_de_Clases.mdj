@@ -2459,7 +2459,7 @@
 											"top": 627,
 											"width": 444.203125,
 											"height": 16,
-											"text": "+EmitirComprobante(DatosComprobante): Comprobante",
+											"text": "+NuevoComprobante(DatosComprobante): Comprobante",
 											"horizontalAlignment": 0
 										},
 										{
@@ -9961,7 +9961,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGERNIhENOJZKE="
 									},
-									"name": "DatosFormulario"
+									"name": "DatosFormulario",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -9988,7 +9989,8 @@
 									"_parent": {
 										"$ref": "AAAAAAGERNIkotS4P8w="
 									},
-									"name": "DatosFormulario"
+									"name": "DatosFormulario",
+									"type": ""
 								},
 								{
 									"_type": "UMLParameter",
@@ -10296,7 +10298,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGEP4mVxnRPpMU="
 							},
-							"name": "EmitirComprobante",
+							"name": "NuevoComprobante",
 							"parameters": [
 								{
 									"_type": "UMLParameter",
@@ -10312,7 +10314,9 @@
 									"_parent": {
 										"$ref": "AAAAAAGEROlb96oZWyg="
 									},
-									"type": "Comprobante",
+									"type": {
+										"$ref": "AAAAAAGETlc3HP9u6cY="
+									},
 									"direction": "return"
 								}
 							]
@@ -11007,7 +11011,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGERJvB0JsS0fU="
 							},
-							"name": "Tipo"
+							"name": "Tipo",
+							"type": ""
 						}
 					]
 				},
@@ -11296,7 +11301,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGETk3Ah5RZQNQ="
 							},
-							"name": "Monto"
+							"name": "Monto",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
