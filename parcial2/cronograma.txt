@@ -1,0 +1,13 @@
+Distribucion del trabajo
+    - Abel Díaz, Andrés Roman: Diagrama de Secuencia y Relaciones(Mecanismos de Abstracción)
+    - Elías Gill: Diagrama de clases
+    - Rodrigo Alvarenga: Diagrama de bases de datos
+    -
+
+Cronograma
+- Investigacion y division del trabajo: 25 de octubre al 30 de octubre
+- Elaboracion de los documentos escritos: 4 de noviembre al 6 de noviembre
+- Elaboracion del material audiovisual: 6 de noviembre
+- Correccion de errores y entrega: 7 de noviembre
+
+
