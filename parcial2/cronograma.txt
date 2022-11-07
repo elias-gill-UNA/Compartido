@@ -13,9 +13,9 @@ Cronograma
 
 Plataformas Utilizadas
 
--Draw.io: Realización de los diagramas de casos de uso
+-Moqups.com: Modelos de interfaz grafica 
 -Word: Elaboración del Informe
 -Power Point: Elaboración de la presentación
--Star UML:Para la realización del Modelo Conceptual
+-StarUML: Realizacion de modelados UML
 
 
