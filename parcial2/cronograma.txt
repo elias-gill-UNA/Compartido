@@ -5,9 +5,17 @@ Distribucion del trabajo
     -
 
 Cronograma
+
 - Investigacion y division del trabajo: 25 de octubre al 30 de octubre
 - Elaboracion de los documentos escritos: 4 de noviembre al 6 de noviembre
 - Elaboracion del material audiovisual: 6 de noviembre
 - Correccion de errores y entrega: 7 de noviembre
+
+Plataformas Utilizadas
+
+-Draw.io: Realización de los diagramas de casos de uso
+-Word: Elaboración del Informe
+-Power Point: Elaboración de la presentación
+-Star UML:Para la realización del Modelo Conceptual
 
 
